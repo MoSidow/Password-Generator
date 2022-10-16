@@ -19,6 +19,7 @@ function generatePassword() {
     return;
   }
 
+
   if (length >= 8 && length <= 128) {
   
     var numericChars = confirm("Would you like Numeric Characters?")
@@ -29,9 +30,40 @@ function generatePassword() {
   }
 
   if (numericChars===false && hasSpecialChars===false && hasLowerChars===false && hasUpperChars===false) {
-  alert("Please confitm the type of Criteria");
+  window.alert("Please confitm the type of Criteria");
   return;
 }
+
+if (numericChars) {
+  var numericChars = ["0123456789"]
+}
+if (numericChars===false) {
+var numericChars = [""];
+}
+
+
+if (hasSpecialChars) {
+  var hasSpecialChars = ["!£$%^&*()@~#"]
+}
+if (hasSpecialChars===false) {
+var hasSpecialChars = [""];
+}
+
+if (hasLowerChars) {
+  var hasLowerChars = ["abcdefghijklmnopqrstuvwxyz"]
+}
+if (numericChars===false) {
+var numericChars = [""];
+}
+
+if (numericChars) {
+  var numericChars = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"]
+}
+if (numericChars===false) {
+var numericChars = [""];
+}
+
+
 
 
 
