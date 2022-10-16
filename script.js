@@ -19,7 +19,23 @@ function generatePassword() {
     return;
   }
 
+  if (length >= 8 && length <= 128) {
   
+    var numericChars = confirm("Would you like Numeric Characters?")
+    var hasSpecialChars = confirm("Would you like Special Characters")
+    var hasLowerChars = confirm("Would you like Lower Case Characters")
+    var hasUpperChars = confirm("Would you like Special Characters")
+   
+  }
+
+  if (numericChars===false && hasSpecialChars===false && hasLowerChars===false && hasUpperChars===false) {
+  alert("Please confitm the type of Criteria");
+  return;
+}
+
+
+
+
 
 
 
